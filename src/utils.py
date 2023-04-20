@@ -22,17 +22,8 @@ def save_object(file_path, obj):
 
 #above code use for model_transformation.py
 
-#dont use is it
-'''
-def evaluate_model(true,predicted):
-    mae=mean_absolute_error(true, predicted)
-    mse=mean_squared_error(true, predicted)
-    rmse=np.sqrt(mean_squared_error(true,predicted))
-    r2_square=r2_score(true,predicted)
-    return mae.rmse,r2_square
-'''
 
-
+'''
 # following code for model_trainer.py  line 41  
 def evaluate_model(X_train,y_train,X_test,y_test,models):
     try:
@@ -58,4 +49,14 @@ def evaluate_model(X_train,y_train,X_test,y_test,models):
     except Exception as e:
         logging.info('Exception occured during model training')
         raise CustomException(e,sys)
+'''       
+
        
+# this code for prediction_pipeline.py under pipeline folder
+def load_object(file_path):
+    try:
+        with open(file_path,'rb') as file_obj:
+            return pickle.load(file_obj)
+    except Exception as e:
+        logging.info('Exception Occured in load_object function utils')
+        raise CustomException(e,sys)

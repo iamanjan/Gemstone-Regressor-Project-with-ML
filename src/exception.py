@@ -21,6 +21,7 @@ class CustomException(Exception):
         return self.error_message    
     
 '''
+#example code
 if __name__=="__main__":
     logging.info("Logging has started")
     try:

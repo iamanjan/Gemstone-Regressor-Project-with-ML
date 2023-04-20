@@ -19,3 +19,5 @@ if __name__=='__main__':
     #we use this code for run the model_trainer.py
     #we run this training_pipeline.py for execute the model_trainer.py
     # it will create model.pkl file under artifacts folder after execution
+
+    

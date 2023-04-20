@@ -8,8 +8,9 @@ from sklearn.model_selection import train_test_split # split the dataset
 from dataclasses import dataclass # we can create directly variable vthout using init
 
 from src.components.data_transformation import DataTransformation
-#use above src.components for train_data_path and test_data_path
+'''use above src.components for train_data_path and test_data_path
 #we use it for data_transformation.py
+'''
 
 
 ## Intitialize the Data Ingetion Configuration
@@ -72,3 +73,4 @@ if __name__=='__main__':
         train_arr,test_arr,_=data_transformation.initaite_data_transformation(train_data_path, test_data_path)
         # to execute this enable src.components import funtcion
         # we can use this code in training_pipeline under pipeline folder
+        

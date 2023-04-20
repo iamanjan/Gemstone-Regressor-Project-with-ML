@@ -124,3 +124,4 @@ class DataTransformation:
             logging.info("Exception occured in the initiate_datatransformation")
 
             raise CustomException(e,sys)
+        #to execute this code,run the data_ingestion.py

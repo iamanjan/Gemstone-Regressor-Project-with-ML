@@ -69,3 +69,4 @@ class ModelTrainer:
         
         # to run this file we use to execute training_pipeline.py
         #dont run model_trainer.py file 
+        
