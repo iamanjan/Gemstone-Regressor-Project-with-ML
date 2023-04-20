@@ -1,4 +1,4 @@
-# Basic Import
+# Basic Import for model trainer
 import numpy as np
 import pandas as pd
 from sklearn.linear_model import LinearRegression, Ridge,Lasso,ElasticNet
@@ -69,4 +69,3 @@ class ModelTrainer:
         
         # to run this file we use to execute training_pipeline.py
         #dont run model_trainer.py file 
-        
